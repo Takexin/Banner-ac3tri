@@ -13,7 +13,8 @@ body{
     padding: 20px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 100px 30px 350px 30px 350px 60px 100px 30px 350px 30px 100px 30px 350px;
+    grid-template-rows: 100px 30px 350px 30px 350px 60px 100px 30px 350px 30px 100px 30px 350px 30px 100px;
+    animation: scrollAnimation ease-in-out 1s 1;
 }
 
 header{
@@ -122,10 +123,30 @@ header img{
 #consequencia .texto{
     width: 60%;
 }
+#quemSomosTexto{
+    width: 70%;
+}
+
 footer{
     background-color: rgba(64, 81, 59, 1);
     grid-column: 1/5;
     border-radius: 10px;
 
 }
+@keyframes scrollAnimation{
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
 
+@media (max-width: 930px) {
+    body{
+        font-size: 0.7em;
+        justify-content: flex-start;
+    }
+}
