@@ -62,7 +62,6 @@ header img{
 }
 
 #tecnologia{
-    padding: 20px;
     grid-column: 1/5;
     display: flex;
     flex-wrap: wrap;
@@ -75,14 +74,14 @@ header img{
 #tecnologia div{
     display: flex;
     justify-content: space-around;
-    width: 80%;
+    width: 100%;
 }
 #tecnologia div img{
     height: 150px;
     object-fit: cover;
 }
 .textoTeste{
-    height: 150px;
+    height: 170px;
     width: 90%;
     text-align: center;
     background-color: rgba(96, 153, 102, 1);
@@ -92,12 +91,10 @@ header img{
     border-radius: 10px;
     filter: drop-shadow(0 4px 5px rgba(0, 0, 0, 0.25));
 }
-/* #tecnologia .texto{
-    width: 90%;
-    height: 150px;
-} */
+
 #tecnologia h1{
     height: 0;
+    font-size: 2em;
 }
 .texto h1{
     font-size: 2em;
@@ -142,6 +139,9 @@ footer{
 @media (max-width: 720px){
     body{
         font-size: 0.7em;
+    }
+    #consequencia h1{
+        font-size: 1.7em;
     }
 }
 @media (max-width: 620px){
@@ -228,10 +228,10 @@ footer{
         height: 400px;
     }
     #tecnologia .images img{
-        width: 40%;
+        width: 100px;
     }
     #tecnologia .images{
-        justify-self: start;
+        width: 100%;
     }
     #quemSomosHero{
         flex-direction: column-reverse;
