@@ -24,9 +24,12 @@ header{
     padding: 10px;
     border-radius: 10px;
     grid-column: 1/5;
+    gap: 10px;
 }
 header img{
-    height: 60px;
+    max-height: 60px;
+    max-width: 60px;
+    border-radius: 5px;
 }
 .separatorio{
     background-color: rgba(64, 81, 59, 1);
